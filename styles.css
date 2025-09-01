@@ -1,0 +1,122 @@
+/* Importa fonte tribal */
+@import url('https://fonts.googleapis.com/css2?family=Metamorphous&display=swap');
+
+/* Estilo padrão do corpo */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Cabeçalho tribal */
+h1, h2, h3 {
+    font-family: 'Metamorphous', cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #3e2a18;
+}
+
+/* Seções */
+section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Galeria */
+#galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+#galeria img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+#galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Botão de acessibilidade */
+#botao-acessibilidade {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #3e2a18;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+#botao-acessibilidade.rotacao-botao {
+    transform: rotate(90deg);
+}
+
+/* Lista de acessibilidade */
+#opcoes-acessibilidade {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    padding: 10px;
+}
+
+#opcoes-acessibilidade.apresenta-lista {
+    display: block;
+}
+
+#opcoes-acessibilidade button {
+    display: block;
+    margin: 5px 0;
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    background: #3e2a18;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+#opcoes-acessibilidade button:hover {
+    background: #6b4b2f;
+}
+
+/* Modo alto contraste */
+body.alto-contraste {
+    background: #000 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste section {
+    background: #111 !important;
+    color: #fff !important;
+}
+
+body.alto-contraste #opcoes-acessibilidade {
+    background: #000 !important;
+    border: 1px solid #fff;
+}
+
+body.alto-contraste button {
+    background: #fff !important;
+    color: #000 !important;
+}
