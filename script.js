@@ -33,10 +33,37 @@ document.addEventListener('DOMContentLoaded', function () {
     alternaContraste.addEventListener('click', function () {
         document.body.classList.toggle('alto-contraste');
     });
-});
 
-// Animações ScrollReveal para as seções do site indígena
-ScrollReveal().reveal('#inicio', { delay: 500 });
-ScrollReveal().reveal('#cultura', { delay: 500 });
-ScrollReveal().reveal('#galeria', { delay: 500 });
-ScrollReveal().reveal('#contato', { delay: 500 });
+    // Animações ScrollReveal para as seções
+    ScrollReveal().reveal("#inicio", {
+        reset: true,
+        delay: 200,
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom"
+    });
+
+    ScrollReveal().reveal("#cultura", {
+        reset: true,
+        delay: 300,
+        duration: 1000,
+        distance: "50px",
+        origin: "left"
+    });
+
+    ScrollReveal().reveal("#galeria", {
+        reset: true,
+        delay: 400,
+        duration: 1000,
+        distance: "50px",
+        origin: "right"
+    });
+
+    ScrollReveal().reveal("#contato", {
+        reset: true,
+        delay: 500,
+        duration: 1000,
+        distance: "50px",
+        origin: "bottom"
+    });
+});
